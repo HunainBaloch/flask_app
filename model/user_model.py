@@ -1,10 +1,10 @@
-import _mysql_connector
+import mysql.connector
 
 class user_model():
     def __init__(self):
         # Connection Establishment code
         try:
-            con = _mysql_connector.connect(host="localhost", user="root",password="",database="flask_tutorial")
+            con = mysql.connector.connect(host="localhost", user="root",password="",database="flask_tutorial")
             print("Connection Sucessful")
         except:
             print("Some Error")
